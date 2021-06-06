@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Document</title>
+</head>
+
+<body>
+  <a-scene physics="driver: ammo; debug: true; debugDrawMode: 1;">
+    <a-assets>
+      <a-asset-item src="assets/delivery_balloon/scene.gltf"></a-asset-item>
+    </a-assets>
+    <a-entity camera position="0 1.6 5" look-controls wasd-controls></a-entity>
+    <a-plane ammo-body="type: static" ammo-shape="type: box" position="0 0 -4" rotation="-90 0 0" width="8" height="8"
+      color="yellow"></a-plane>
+    <a-box ammo-body="type: dynamic" ammo-shape="type: box" position="0 4 -2" width="3" height="2" depth="1"
+      color="red"></a-box>
+    <a-box ammo-body="type: dynamic" ammo-shape="type: box" position="2 10 0" width="1" height="1" depth="1"
+      color="blue"></a-box>
+  </a-scene>
+</body>
+
+</html>
